@@ -28,7 +28,21 @@ header {
 }
 .navegation-links {
   flex: 1;
+  padding: 1.5em 1em;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
 }
+.navegation-links:hover {
+  color: white;
+}
+.navegation-links:active {
+  border-right: 2px solid red;
+  border-left: 2px solid red;
+  border-radius: 25%;
+  color: black;
+}
+
 .sections-container {
   height: 700px;
   border: 1px solid red; /*Temporal*/
