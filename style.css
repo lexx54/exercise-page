@@ -1,21 +1,96 @@
 /*---------------------------
 --------Header Start---------
 ---------------------------*/
-.title {
-  background-color: yellow;
+header {
+  background-color: yellow; /*Temporal*/
+  height: 50px;
+}
+.header-title {
   text-align: center;
-  margin: 0;
+  font-size: 2em;
+  padding-top: 10px;
 }
 /*------Header End----------*/
 
 /*---------------------------
 --------Main Start-----------
 ----------------------------*/
+#links-container {
+  background-color: rgba(192, 192, 192, 0.8);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 80%;
+}
+.navegation-links {
+  flex: 1;
+}
+.sections-container {
+  height: 700px;
+  border: 1px solid red; /*Temporal*/
+}
+.appear {
+  transition: transform 0.5s ease-in;
+  transform: translateX(0);
+}
+.disappear {
+  transition: transform 0.5s ease;
+  transform: translateX(-100%);
+}
 
+@media screen and (min-width: 720px) {
+  #links-container {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #links-container {
+    width: 50%;
+  }
+}
 /*------Main End------------*/
 
 /*----------------------------
 --------Footer Start----------
 ----------------------------*/
+.btn-menu {
+  /* border: 1px solid yellow; */
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  font-size: 4em;
+  cursor: pointer;
+}
+.btn-menu-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  transform-style: preserve-3d;
+}
+.btn-inner-movement {
+  transform: rotateX(180deg);
+}
+.btn-menu-front,
+.btn-menu-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding-top: 5px;
+  border-radius: 50%;
+}
 
+.btn-menu-back {
+  transform: rotateX(180deg);
+}
 /*------Footer End----------*/

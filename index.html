@@ -5,18 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise Page</title>
     <link rel="stylesheet" href="reset.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header><h1 class="header-title">Ejercicios del DOM</h1></header>
     <main>
-      <h1 class="title">ejercicios del DOM</h1>
-      <section class="sections-container">section 1</section>
-      <section class="sections-container">section 2</section>
-      <section class="sections-container">section 3</section>
-      <section class="sections-container">section 4</section>
-      <section class="sections-container">section 5</section>
+      <nav id="links-container" class="disappear">
+        <a href="#section1" class="navegation-links">section link 1</a>
+        <a href="#section2" class="navegation-links">section link 2</a>
+        <a href="#section3" class="navegation-links">section link 3</a>
+        <a href="#section4" class="navegation-links">section link 4</a>
+        <a href="#section5" class="navegation-links">section link 5</a>
+      </nav>
+      <section class="sections-container" id="section1">
+        <h2>section 1</h2>
+      </section>
+      <section class="sections-container" id="section2">
+        <h2>section 2</h2>
+      </section>
+      <section class="sections-container" id="section3">
+        <h2>section 3</h2>
+      </section>
+      <section class="sections-container" id="section4">
+        <h2>section 4</h2>
+      </section>
+      <section class="sections-container" id="section5">
+        <h2>section 5</h2>
+      </section>
+      <div class="btn-menu">
+        <div class="btn-menu-inner">
+          <div class="btn-menu-front">
+            <i class="bx bx-menu"></i>
+          </div>
+          <div class="btn-menu-back">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer><p>hi there</p></footer>
     <script src="hamburguerScript.js"></script>
   </body>
 </html>
