@@ -48,7 +48,10 @@ header {
 .sections-container {
   height: 700px;
   border: 1px solid red; /*Temporal*/
+  display: flex;
+  flex-direction: column;
 }
+
 .appear {
   transition: transform 0.5s ease-in;
   transform: translateX(0);
@@ -77,7 +80,8 @@ header {
   align-items: stretch;
   text-align: center;
 }
-#section1 h2 {
+/* #section1 h2 { */
+.section-title {
   font-size: 3em;
   padding: 1em auto;
   /* border: 1px solid black; */
@@ -110,9 +114,27 @@ header {
 }
 .show-img {
   max-width: 100%;
-  /* max-height: 90%; */
 }
-
+@media screen and (min-width: 1020px) {
+  .show-img {
+    /* max-width: 100%; */
+    max-height: 70%;
+  }
+}
+/*--------keyword events--------------*/
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: gray;
+  flex: 2;
+}
+.ball {
+  margin: auto;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: yellow;
+}
 /*------Main End------------*/
 
 /*----------------------------
