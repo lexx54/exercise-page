@@ -135,6 +135,17 @@ header {
   border-radius: 50%;
   background-color: yellow;
 }
+/*----------countdown-------------------*/
+.count-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.count-para {
+  font-size: 2.5em;
+}
 /*------Main End------------*/
 
 /*----------------------------
