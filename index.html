@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,18 +12,20 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header><h1 class="header-title">Ejercicios del DOM</h1></header>
+  <body data-dark>
+    <header>
+      <h1 class="header-title" data-dark="">Ejercicios del DOM</h1>
+    </header>
     <aside>
       <nav id="links-container" class="disappear">
         <a href="#section1" class="navegation-links">Clock and Alarm</a>
         <a href="#section2" class="navegation-links">Keyword events</a>
         <a href="#section3" class="navegation-links">CountDown</a>
-        <a href="#section4" class="navegation-links">section link 4</a>
+        <a href="#section4" class="navegation-links">Arrow Up</a>
         <a href="#section5" class="navegation-links">section link 5</a>
       </nav>
     </aside>
-    <main>
+    <main id="total-title">
       <section class="sections-container" id="section1">
         <h2 class="section-title">Clock and Alarm</h2>
         <div class="btn-container"></div>
@@ -40,7 +42,11 @@
         <div class="count-container"></div>
       </section>
       <section class="sections-container" id="section4">
-        <h2 class="section-title">Section 4</h2>
+        <h2 class="section-title">Arrow Up Button</h2>
+        <p>
+          If you are here and you can see an arrow button on the bottom-right
+          corner It'S Working!
+        </p>
       </section>
       <section class="sections-container" id="section5">
         <h2 class="section-title">Section 5</h2>
@@ -55,6 +61,10 @@
           </div>
         </div>
       </div>
+      <div class="arrowUp">
+        <a href="#total-title"><i class="bx bxs-up-arrow-alt"></i></a>
+      </div>
+      <button class="dark-theme-btn">🌙</button>
     </main>
     <footer><p>hi there</p></footer>
     <script src="hamburguerScript.js"></script>

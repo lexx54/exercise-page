@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /*---------------------------
 --------Header Start---------
 ---------------------------*/
@@ -146,6 +149,62 @@ header {
 .count-para {
   font-size: 2.5em;
 }
+/*-----------arrow---------------------*/
+.arrowUp {
+  position: fixed;
+  bottom: 5%;
+  right: 15%;
+  width: 70px;
+  height: 70px;
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background-color: yellow;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.arrowUp > a {
+  color: black;
+}
+.arrowAp {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  visibility: visible;
+}
+#section4 > p {
+  flex: 1;
+  font-size: 2em;
+  padding: 1em;
+}
+/*----------------dark mode-----------------*/
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+.dark-theme-btn:hover {
+  background-color: black;
+  color: yellow;
+}
+.dark-mode {
+  background-color: black;
+  color: yellow;
+}
 /*------Main End------------*/
 
 /*----------------------------
@@ -160,6 +219,8 @@ header {
   bottom: 5%;
   font-size: 4em;
   cursor: pointer;
+  background-color: yellow;
+  border-radius: 50%;
 }
 .btn-menu-inner {
   position: relative;
