@@ -205,6 +205,14 @@ header {
   background-color: black;
   color: yellow;
 }
+/*------------------responsive-----------*/
+#section5 {
+  /* justify-content: center; */
+  align-items: center;
+}
+.responsive-container {
+  flex: 1;
+}
 /*------Main End------------*/
 
 /*----------------------------
