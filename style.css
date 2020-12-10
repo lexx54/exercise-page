@@ -23,7 +23,6 @@ header {
 #links-container {
   background-color: rgba(192, 192, 192, 0.8);
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   height: 100vh;
@@ -33,7 +32,6 @@ header {
 }
 .navegation-links {
   flex: 1;
-  padding: 1.5em 1em;
   font-size: 2em;
   text-decoration: none;
   color: black;
