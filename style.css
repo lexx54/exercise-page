@@ -29,6 +29,7 @@ header {
   position: fixed;
   top: 0;
   width: 80%;
+  z-index: 996;
 }
 .navegation-links {
   flex: 1;
@@ -210,6 +211,13 @@ header {
 }
 .responsive-container {
   flex: 1;
+}
+/*----------responsive tester------------*/
+#section6 form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /*------Main End------------*/
 
