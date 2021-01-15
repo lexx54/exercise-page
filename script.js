@@ -6,6 +6,7 @@ import darktheme from "./darkTheme.js";
 import responsiveMedia from "./responsive.js";
 import responsiveTester from "./responsivetester.js";
 import userDeviceInfo from "./deviceDetection.js";
+import networkStatus from "./redDetection.js";
 
 
 
@@ -37,3 +38,4 @@ d.addEventListener("scroll",e=>{
 })
 
 darktheme(".dark-theme-btn","dark-mode")
+networkStatus();

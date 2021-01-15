@@ -45,4 +45,9 @@ export default function userDeviceInfo(id){
   } else if (isBrowser.firefox()){
     $id.innerHTML+=`<p><mark>You can see this only in firefox</mark></p>`;
   }
+
+  //using redirection
+  // if(isMobile.android){
+  //   window.location.href="url"
+  // }
 }
