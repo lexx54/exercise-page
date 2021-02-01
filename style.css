@@ -53,6 +53,7 @@ header {
   border: 1px solid red; /*Temporal*/
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .appear {
@@ -92,6 +93,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.sections-container > :not(.section-title) {
+  flex: 1;
 }
 .btn-container {
   flex: 1;
