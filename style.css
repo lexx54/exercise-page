@@ -55,8 +55,7 @@ header {
   flex-direction: column;
   align-items: center;
 }
-
-.appear {
+.sections-container .appear {
   transition: transform 0.5s ease-in;
   transform: translateX(0);
 }
@@ -88,11 +87,8 @@ header {
 .section-title {
   font-size: 3em;
   padding: 1em auto;
-  /* border: 1px solid black; */
   flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .sections-container > :not(.section-title) {
   flex: 1;
@@ -134,6 +130,7 @@ header {
   min-height: 50vh;
   background-color: gray;
   flex: 2;
+  width: 100%;
 }
 .ball {
   margin: auto;
