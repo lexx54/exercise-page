@@ -30,6 +30,7 @@ header {
   top: 0;
   width: 80%;
   z-index: 996;
+  overflow-y: auto;
 }
 .navegation-links {
   flex: 1;
