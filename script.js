@@ -9,6 +9,8 @@ import userDeviceInfo from "./deviceDetection.js";
 import networkStatus from "./redDetection.js";
 import webCam from "./webcamDetection.js";
 import { getGeolocation } from "./geolocalization.js";
+import searchfilter from "./searchfilter.js";
+import draw from './raffle.js';
 
 
 
@@ -28,6 +30,8 @@ d.addEventListener("DOMContentLoaded",e=>{
   userDeviceInfo('user-device');
   webCam("webcam");
   getGeolocation("geolocation");
+  searchfilter(".card-filter",".card");
+  draw("#winner-btn",".player")
 })
 d.addEventListener("click",e=>{
   

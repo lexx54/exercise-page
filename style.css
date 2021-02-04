@@ -52,7 +52,7 @@ header {
 }
 
 .sections-container {
-  height: 700px;
+  min-height: 700px;
   border: 1px solid red; /*Temporal*/
   display: flex;
   flex-direction: column;
@@ -235,6 +235,31 @@ header {
 }
 .offline {
   background-color: #b71c1c;
+}
+/**************************Search Filter*************/
+
+#section11 .cards {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background-color: gray;
+  color: yellow;
+  transition: all 0.3s ease-out;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card figcaption {
+  padding: 1rem;
+}
+.filter {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
 }
 /*------Main End------------*/
 
