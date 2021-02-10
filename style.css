@@ -9,6 +9,7 @@ header {
   height: 50px;
   position: sticky;
   top: 0;
+  z-index: 996;
 }
 .header-title {
   text-align: center;
@@ -260,6 +261,61 @@ header {
   visibility: hidden;
   opacity: 0;
   order: 1;
+}
+
+/**************************Slider*****************/
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.slider-slides {
+  position: relative;
+  height: 400px;
+}
+.slider-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+.slider-slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+}
+.slider-btns {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3em;
+  font-weight: bold;
+}
+.slider a {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: thin solid #000;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.slider a:hover {
+  color: #4d4d4d;
 }
 /*------Main End------------*/
 
