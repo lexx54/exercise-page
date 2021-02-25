@@ -39,7 +39,8 @@ header {
   text-decoration: none;
   color: black;
 }
-.navegation-links:hover {
+.navegation-links:hover,
+.navegation-links:active {
   color: white;
   width: 100%;
   text-align: center;
@@ -317,6 +318,47 @@ header {
 .slider a:hover {
   color: #4d4d4d;
 }
+/*---------Scrollspy-----------*/
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas:
+      "header header"
+      "main panel";
+  }
+  main {
+    grid-area: main;
+  }
+  header {
+    grid-area: header;
+    height: 100%;
+  }
+  #links-container {
+    grid-area: panel;
+    position: sticky;
+    left: 0;
+    right: 0;
+    transform: translateX(0);
+    width: 100%;
+    top: 4rem;
+    align-items: stretch;
+    text-align: center;
+  }
+  .navegation-links {
+    font-size: 1.5em;
+  }
+  .btn-menu {
+    display: none;
+  }
+  .arrowUp {
+    right: initial;
+    left: calc(4.25rem + 1vh);
+    bottom: 1%;
+  }
+}
+
 /*------Main End------------*/
 
 /*----------------------------

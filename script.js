@@ -11,6 +11,7 @@ import webCam from "./webcamDetection.js";
 import { getGeolocation } from "./geolocalization.js";
 import searchfilter from "./searchfilter.js";
 import draw from './raffle.js';
+import slider from './carrousel.js';
 
 
 
@@ -31,7 +32,8 @@ d.addEventListener("DOMContentLoaded",e=>{
   webCam("webcam");
   getGeolocation("geolocation");
   searchfilter(".card-filter",".card");
-  draw("#winner-btn",".player")
+  draw("#winner-btn",".player");
+  slider();
 })
 d.addEventListener("click",e=>{
   
