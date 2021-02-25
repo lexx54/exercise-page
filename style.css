@@ -40,7 +40,7 @@ header {
   color: black;
 }
 .navegation-links:hover,
-.navegation-links:active {
+.coler {
   color: white;
   width: 100%;
   text-align: center;

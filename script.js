@@ -12,6 +12,7 @@ import { getGeolocation } from "./geolocalization.js";
 import searchfilter from "./searchfilter.js";
 import draw from './raffle.js';
 import slider from './carrousel.js';
+import { scrollSpy } from "./scroll_spy.js";
 
 
 
@@ -34,6 +35,7 @@ d.addEventListener("DOMContentLoaded",e=>{
   searchfilter(".card-filter",".card");
   draw("#winner-btn",".player");
   slider();
+  scrollSpy();
 })
 d.addEventListener("click",e=>{
   
