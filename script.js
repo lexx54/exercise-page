@@ -13,6 +13,7 @@ import searchfilter from "./searchfilter.js";
 import draw from './raffle.js';
 import slider from './carrousel.js';
 import { scrollSpy } from "./scroll_spy.js";
+import { smartVideo } from "./smart-video.js";
 
 
 
@@ -36,6 +37,7 @@ d.addEventListener("DOMContentLoaded",e=>{
   draw("#winner-btn",".player");
   slider();
   scrollSpy();
+  smartVideo();
 })
 d.addEventListener("click",e=>{
   
