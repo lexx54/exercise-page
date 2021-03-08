@@ -14,6 +14,7 @@ import draw from './raffle.js';
 import slider from './carrousel.js';
 import { scrollSpy } from "./scroll_spy.js";
 import { smartVideo } from "./smart-video.js";
+import { contactFormValidation } from "./form-validation.js";
 
 
 
@@ -38,6 +39,7 @@ d.addEventListener("DOMContentLoaded",e=>{
   slider();
   scrollSpy();
   smartVideo();
+  contactFormValidation();
 })
 d.addEventListener("click",e=>{
   

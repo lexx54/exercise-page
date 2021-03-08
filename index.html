@@ -31,7 +31,7 @@
         <a data-scroll-spy href="#section12" class="navegation-links">Digital raffle</a>
         <a data-scroll-spy href="#section13" class="navegation-links">Responsive Slider</a>
         <a data-scroll-spy href="#section14" class="navegation-links">Smart Video</a>
-        <a data-scroll-spy href="#section15" class="navegation-links"></a>
+        <a data-scroll-spy href="#section15" class="navegation-links">Form Validation</a>
       </nav>
 
     <main id="total-title">
@@ -175,7 +175,27 @@
         <video src="/assets/VID_20201225_122013.mp4" muted controls loop width="400px" data-smart-video></video>
       </section>
       <section class="sections-container" data-scroll-spy id="section15">
-        <h2 class="section-title"></h2>
+        <h2 class="section-title">Form validation</h2>
+        <form action="" class="contact-form">
+          <legend>Send us your Comment</legend>
+          <label for="name">Name: </label>
+          <input type="text" class="" name="name" placeholder="Type your name" title="name only accept letter and whitespace"
+          required pattern="[a-zA-Z0-9]+">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="" required 
+          pattern="^[a-z0-9]+(\.[a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9]+)*(\.[a-z]{2,15})" placeholder="type your email" title="Incorrect Email">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" placeholder="subject to talk" required title="Subject Required">
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="" cols="50" rows="5" placeholder="Type your comment" data-pattern="^.{1,255}" required></textarea>
+          <input type="submit" value="Send">
+          <div class="contact-fomr-loader none">
+            <img src="./assets/Dual Ring-1s-200px.svg" alt="">
+          </div>
+          <div class="contact-form-response none">
+            <p>Data succesfully sent</p>
+          </div>
+        </form>
       </section>
       <div class="btn-menu">
         <div class="btn-menu-inner">
