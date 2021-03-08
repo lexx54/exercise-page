@@ -402,18 +402,20 @@ header {
   border: thin solid var(--form-error-color);
 }
 .contact-form-error {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   font-size: 80%;
   background-color: var(--form-error-color);
   color: white;
   transition: all 800ms ease;
+  text-align: center;
 }
-.contact-form-error .is-active {
-  display: block;
-  animation: show-message 1s 1 normal ease-out both;
-}
+
 .none {
   display: none;
+}
+.is-active {
+  display: block;
+  animation: show-message 1s 1 normal ease-out both;
 }
 @keyframes show-message {
   0% {

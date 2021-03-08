@@ -180,14 +180,14 @@
           <legend>Send us your Comment</legend>
           <label for="name">Name: </label>
           <input type="text" class="" name="name" placeholder="Type your name" title="name only accept letter and whitespace"
-          required pattern="[a-zA-Z0-9]+">
+          required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
           <label for="email">Email</label>
           <input type="email" name="email" id="" required 
-          pattern="^[a-z0-9]+(\.[a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9]+)*(\.[a-z]{2,15})" placeholder="type your email" title="Incorrect Email">
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" placeholder="type your email" title="Incorrect Email">
           <label for="subject">Subject</label>
           <input type="text" name="subject" placeholder="subject to talk" required title="Subject Required">
           <label for="comments">Comments</label>
-          <textarea name="comments" id="" cols="50" rows="5" placeholder="Type your comment" data-pattern="^.{1,255}" required></textarea>
+          <textarea name="comments" id="" cols="50" rows="5" placeholder="Type your comment" data-pattern="^.{1,255}$" required title="Max character allowed 255"></textarea>
           <input type="submit" value="Send">
           <div class="contact-fomr-loader none">
             <img src="./assets/Dual Ring-1s-200px.svg" alt="">
