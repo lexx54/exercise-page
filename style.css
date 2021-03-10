@@ -373,6 +373,10 @@ header {
   padding: 0.5rem;
   margin: 1 rem auto;
 }
+.contact-form-loader {
+  display: flex;
+  justify-content: center;
+}
 .contact-form textarea {
   resize: none;
 }
